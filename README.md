@@ -61,3 +61,13 @@
 ### Github repo for django admin styling
 
 #### https://github.com/django-cms/djangocms-admin-style
+
+### settings.py file change for static files
+
+### create folder under tubers and then run command
+
+#### python manage.py collectstatic
+
+<!-- STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'tubers/static')] -->
