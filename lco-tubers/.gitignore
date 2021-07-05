@@ -86,7 +86,6 @@ venv.bak/
 
 # mkdocs documentation 
 /site 
-tubers/static/
 
 # mypy 
 .mypy_cache/ 
