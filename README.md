@@ -71,3 +71,13 @@
 <!-- STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'tubers/static')] -->
+
+### create app
+
+#### python manage.py startapp webpages
+
+#### {% load static %}
+
+#### <link rel="stylesheet" href="{% static './css/base.css' %}" />
+
+#### {% include 'includes/footer.html' %}
