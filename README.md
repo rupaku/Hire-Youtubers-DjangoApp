@@ -81,3 +81,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'tubers/static')] -->
 #### <link rel="stylesheet" href="{% static './css/base.css' %}" />
 
 #### {% include 'includes/footer.html' %}
+
+#### pipenv install django-ckeditor // description with detailed edit
+
+#### add ckeditor to settings.py file under installed apps
