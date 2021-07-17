@@ -22,10 +22,11 @@
   <section
     class="container d-flex justify-content-center align-items-center mt-4"
   >
-    <form class="row text-center">
+    <form method="GET" action="{% url 'search' %}" class="row text-center">
       <div class="col-md-auto">
         <div class="form-group mb-2">
           <input
+            name="keyword"
             type="password"
             class="form-control"
             placeholder="Enter Keywords"

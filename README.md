@@ -85,3 +85,5 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'tubers/static')] -->
 #### pipenv install django-ckeditor // description with detailed edit
 
 #### add ckeditor to settings.py file under installed apps
+
+#### python manage.py startapp accounts
