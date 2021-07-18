@@ -11,6 +11,7 @@ django = "*"
 psycopg2 = "*"
 djangocms-admin-style = "*"
 django-ckeditor = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.8"

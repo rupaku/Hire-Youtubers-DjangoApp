@@ -87,3 +87,37 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR,'tubers/static')] -->
 #### add ckeditor to settings.py file under installed apps
 
 #### python manage.py startapp accounts
+
+#### pipenv install django-allauth
+
+#### https://django-allauth.readthedocs.io/en/latest/installation.html
+
+#### settings.py -> apps -> django.contrib.sites
+
+'allauth',
+'allauth.account',
+'allauth.socialaccount',
+'allauth.socialaccount.providers.google',
+'allauth.socialaccount.providers.facebook',
+
+SITE_ID=1
+
+#### makemigrations and migrate
+
+### Configure facebook
+
+#### developer.facebook.com
+
+#### create app -> consumer ->app connected -> name -> add product as facebook -> web -> site url localhost:8000 ->save ->
+
+dashboard->settings->basic-> app id
+
+#### Go to admin ->Add social applications-> facebook client id -> example.com to right->add site as localhost:8000
+
+#### https://django-allauth.readthedocs.io/en/latest/providers.html#facebook
+
+#### {% load socialaccount %} {% providers_media_js %}
+
+#### settings.py -> LOGIN_REDIRECT_URL ='dashboard'
+
+#### Google -> https://django-allauth.readthedocs.io/en/latest/providers.html#google
