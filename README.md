@@ -121,3 +121,5 @@ dashboard->settings->basic-> app id
 #### settings.py -> LOGIN_REDIRECT_URL ='dashboard'
 
 #### Google -> https://django-allauth.readthedocs.io/en/latest/providers.html#google
+
+#### python manage.py startapp hiretubers

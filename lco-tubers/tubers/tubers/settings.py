@@ -33,6 +33,7 @@ LOGIN_REDIRECT_URL ='dashboard'
 # Application definition
 # app from apps.py file
 INSTALLED_APPS = [
+    'hiretubers.apps.HiretubersConfig',
     'accounts.apps.AccountsConfig',
     'youtubers.apps.YoutubersConfig',
     'webpages.apps.WebpagesConfig',

@@ -14,10 +14,10 @@ def login(request):
 
         if user is not None:
             auth.login(request, user)
-            messages.error(request,'You are logged in')
+            messages.warning(request,'You are logged in')
             return redirect('dashboard')
         else:
-            messages.error(request,'Invalid credentials')
+            messages.warning(request,'Invalid credentials')
             return redirect('login')
     return render(request,'accounts/login.html')
 
@@ -32,11 +32,11 @@ def register(request):
 
         if password == confirm_password:
             if User.objects.filter(username=username).exists():
-                messages.error(request,'Username exists')
+                messages.warning(request,'Username exists')
                 return redirect('register')
             else:
                 if User.objects.filter(email=email).exists():
-                    messages.error(request,'email already exists')
+                    messages.warning(request,'email already exists')
                     return redirect('register')
                 else:
                     user = User.objects.create_user(first_name=firstname,last_name=lastname,username=username,email=email,password=password)
@@ -44,7 +44,7 @@ def register(request):
                     messages.success(request, 'Account created successfully!')
                     return redirect('login')
         else:
-            messages.error(request,'Password don not match')
+            messages.warning(request,'Password don not match')
             return redirect('register')
     return render(request,'accounts/register.html')
 

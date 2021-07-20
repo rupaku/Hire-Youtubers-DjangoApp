@@ -3,6 +3,7 @@
   <h1 class="text-center mt-5 mb-5 animate__animated animate__slideInDown">
     Login
   </h1>
+  <div class="col-md-4 offset-md-4">{% include 'messages.html' %}</div>
   <div class="row">
     <div class="col-md-6">
       <img
@@ -11,6 +12,7 @@
         alt="img"
       />
     </div>
+
     <form method="POST" action="{% url 'login' %}" class="col-md-5 offset-1">
       {% csrf_token %}
       <div class="form-group">
